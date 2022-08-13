@@ -16,11 +16,12 @@ exports.config = {
             },
       specs: ['../test/Payback.js'],
       framework: 'jasmine',
-      allScriptsTimeout: 9000,
+      allScriptsTimeout: 10000,
       defaultTimeoutInterval: 120000,
       onPrepare: function() {
-          var jasmineReporters = require('/Users/samirananda/Protractor/node_modules/jasmine-reporters');
-          jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter(null, true, true));
+        browser.manage().timeouts().implicitlyWait(5000);
+        var jasmineReporters = require('/Users/samirananda/Protractor/node_modules/jasmine-reporters');
+        jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter(null, true, true));
      }
    }
  };

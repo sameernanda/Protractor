@@ -5,7 +5,8 @@ var common = require('../utils/common.js');
 
 describe("Payback Assessment Test", function() {
   browser.waitForAngularEnabled(false)
-  browser.ignoreSynchronization = true; 
+  browser.ignoreSynchronization = true;
+  browser.manage().window().maximize();
 
   it("verify Payback home page title", function() {
     browser.get(testdata.URL);
@@ -29,12 +30,13 @@ describe("Payback Assessment Test", function() {
     po.emailField().sendKeys(testdata.userName);
     po.passwordField().sendKeys(testdata.password);
     po.furtherbutton().click();
-
+    browser.driver.sleep(5000);
     po.oneStepButton().click();
 
     common.verifyUIError();
     common.fillFormData();
 
     po.oneStepButton().click();
+    browser.quit();
   });
 });
