@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="18.433">
+ <testsuite name="Payback Assessment Test" timestamp="2022-08-11T20:04:31" hostname="localhost" time="18.433" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="Payback Assessment Test" name="verify Payback home page title" time="18.134" />
+  <testcase classname="Payback Assessment Test" name="register user" time="0.299">
+   <failure type="exception" message="Failed: No element found using locator: By(link text, anmelden&apos;])"><![CDATA[NoSuchElementError: No element found using locator: By(link text, anmelden'])
+    at /Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/built/element.js:814:27
+    at ManagedPromise.invokeCallback_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at /Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+    at /Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)Error
+    at ElementArrayFinder.applyAction_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.<computed> [as click] (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.<computed> [as click] (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/built/element.js:831:22)
+    at UserContext.<anonymous> (/Users/samirananda/Protractor/test/Payback.js:17:40)
+    at /Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+From: Task: Run it("register user") in control flow
+    at UserContext.<anonymous> (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/samirananda/Protractor/test/Payback.js:16:3)
+    at addSpecsToSuite (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/Users/samirananda/.nvm/versions/node/v12.7.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/Users/samirananda/Protractor/test/Payback.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
